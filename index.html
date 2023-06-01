@@ -62,14 +62,58 @@
               <heading>Research</heading>
               <p>
                 I work to make computers understand visual information (a field known as <em>computer vision</em>), especially in the absence of labelled data (<em>self-supervised learning</em>). 
-                Specifically, my PhD thesis explores using `time' as a source for self-supervision, see more <a href="https://gtr.ukri.org/projects?ref=studentship-2420787">here</a>.
+                Specifically, my PhD thesis explores using `time' as a source for self-supervision. For example, 
+                (i) using the observation that object moves independently from its background to obtain segmentation masks from motion (optical flow) fields,
+                (ii) using the prior that time flows uniformly to correct pseudo label in clock reading,
+                (iii) using the correct temporal ordering of video frames to localise temporally correlated changes.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          
             <tr onmouseout="time_stop()" onmouseover="time_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <br>
+                <div class="two" id='time_image'><video width=160 muted autoplay loop>
+                <source src="res/order.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='res/order.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function order_start() {
+                  document.getElementById('time_image').style.opacity = "1";
+                }
+
+                function order_stop() {
+                  document.getElementById('time_image').style.opacity = "0";
+                }
+                time_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Made to Order: Learning and localizing temporal correlations via self-supervised video ordering</papertitle>
+              </a>
+              <br>
+              <strong>Charig Yang</strong>, 
+              <a href="https://weidixie.github.io/">Weidi Xie</a>,
+              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
+              <br>
+              <em>Coming soon</em>
+              <br>
+              <a href="">project page</a> /
+              <a href="">arXiv</a>
+              <p></p>
+              <p>We show that neural networks can read analog clocks in unconstrained environments without manual supervision.</p>
+            </td>
+          </tr>
+
+          
+          <tr onmouseout="time_stop()" onmouseover="time_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <br>
@@ -180,7 +224,7 @@
               <br>
               <a href="https://twitter.com/hala_lamdouar/">Hala Lamdouar</a>,
               <strong>Charig Yang</strong>,
-              <a href="https://weidixie.github.io/weidi-personal-webpage/">Weidi Xie</a>,
+              <a href="https://weidixie.github.io/">Weidi Xie</a>,
               <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
               <br>
               <em>ACCV</em>, 2020
