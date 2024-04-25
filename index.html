@@ -70,26 +70,6 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           
-            <tr onmouseout="time_stop()" onmouseover="time_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-              <div class="one">
-                <br>
-                <div class="two" id='time_image'><video width=160 muted autoplay loop>
-                <source src="res/order.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='res/order.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function order_start() {
-                  document.getElementById('time_image').style.opacity = "1";
-                }
-
-                function order_stop() {
-                  document.getElementById('time_image').style.opacity = "0";
-                }
-                time_stop()
-              </script>
             </td>
             <td style="padding:10px;width:80%;vertical-align:middle">
               <a href="">
@@ -100,37 +80,33 @@
               <a href="https://weidixie.github.io/">Weidi Xie</a>,
               <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
               <br>
-              <em>Coming soon</em>
+              <em>Shuffling and ordering sequences reveals changes that are monotonic over time</em>
               <br>
               <a href="">project page</a> /
               <a href="">arXiv</a>
               <p></p>
-              <p>Coming soon.</p>
+              <p>ArXiv, 2024</p>
             </td>
-          </tr>
 
+            </td>
+            <td style="padding:10px;width:80%;vertical-align:middle">
+              <a href="">
+                <papertitle>Moving Object Segmentation: All You Need Is SAM (and Flow)</papertitle>
+              </a>
+              <br>
+              <a href="https://github.com/Jyxarthur">Junyu Xie</a>,
+              <strong>Charig Yang</strong>, 
+              <a href="https://weidixie.github.io/">Weidi Xie</a>,
+              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
+              <br>
+              <em>SAM + Optical Flow works amazingly well in two ways: (i) flow as input to SAM (ii) flow as prompt to guide SAM's RGB input </em>
+              <br>
+              <a href="https://www.robots.ox.ac.uk/~vgg/research/flowsam/">project page</a> /
+              <a href="https://arxiv.org/abs/2404.12389">arXiv</a>
+              <p></p>
+              <p>ArXiv, 2024</p>
+            </td>
           
-          <tr onmouseout="time_stop()" onmouseover="time_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-              <div class="one">
-                <br>
-                <div class="two" id='time_image'><video width=160 muted autoplay loop>
-                <source src="res/time.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='res/time.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function time_start() {
-                  document.getElementById('time_image').style.opacity = "1";
-                }
-
-                function time_stop() {
-                  document.getElementById('time_image').style.opacity = "0";
-                }
-                time_stop()
-              </script>
-            </td>
             <td style="padding:10px;width:80%;vertical-align:middle">
               <a href="https://charigyang.github.io/abouttime/">
                 <papertitle>It's About Time: Analog Clock Reading in the Wild</papertitle>
@@ -147,30 +123,10 @@
               <p></p>
               <p>We show that neural networks can read analog clocks in unconstrained environments without manual supervision.</p>
             </td>
-          </tr>
+
 
           
-          <tr onmouseout="mogroup_stop()" onmouseover="mogroup_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-              <div class="one">
-                <br>
-                <div class="two" id='mogroup_image'><video width=160 muted autoplay loop>
-                <source src="res/motiongroup.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='res/mogroup.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function mogroup_start() {
-                  document.getElementById('mogroup_image').style.opacity = "1";
-                }
 
-                function mogroup_stop() {
-                  document.getElementById('mogroup_image').style.opacity = "0";
-                }
-                mogroup_stop()
-              </script>
-            </td>
             <td style="padding:10px;width:80%;vertical-align:middle">
               <a href="https://charigyang.github.io/motiongroup/">
                 <papertitle>Self-supervised Video Object Segmentation by Motion Grouping</papertitle>
@@ -191,29 +147,8 @@
               <p></p>
               <p>We use transformers to group independently moving parts into layers, resulting in self-supervised segmentation.</p>
             </td>
-          </tr>
 
-          <tr onmouseout="moca_stop()" onmouseover="moca_start()">
-            <td style="padding:10px;width:20%;vertical-align:middle">
-              <div class="one">
-                <br>
-                <div class="two" id='moca_image'><video  width=160 muted autoplay loop>
-                <source src="res/moca.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='res/moca.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function moca_start() {
-                  document.getElementById('moca_image').style.opacity = "1";
-                }
 
-                function moca_stop() {
-                  document.getElementById('moca_image').style.opacity = "0";
-                }
-                moca_stop()
-              </script>
-            </td>
             <td style="padding:10px;width:80%;vertical-align:middle">
               <a href="https://www.robots.ox.ac.uk/~vgg/data/MoCA/">
                 <papertitle>Betrayed by Motion: Camouflaged Object Discovery via Motion Segmentation</papertitle>
@@ -231,7 +166,7 @@
               <p></p>
               <p>We consider the task of camouflaged animal discovery and present a large-scale video camouflage dataset.</p>
             </td>
-          </tr>
+
 
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
