@@ -1,233 +1,413 @@
-<!DOCTYPE HTML>
-<html lang="en"><head>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6J8CBRENW5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6J8CBRENW5');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J8CBRENW5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    gtag('config', 'G-6J8CBRENW5');
+  </script>
 
-  <title>Charig Yang</title>
-  
-  <meta name="author" content="Charig Yang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!--<link rel="icon" type="image/png" href="images/seal_icon.png">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charig Yang</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Existing styles */
+        .publication {
+            margin-bottom: 40px;
+        }
+        .publication h3 {
+            margin-bottom: 10px;
+        }
+        .publication p {
+            margin: 8px 0;
+        }
+        .publication .authors {
+            margin: 8px 0;
+        }
+        .publication .venue {
+            margin: 8px 0;
+        }
+        .defense-image {
+            max-width: 100%;
+            margin-top: 10px;
+            display: none;
+        }
+        .button-group {
+            margin: 8px 0;
+        }
+        .button-group button {
+            background: none;
+            border: 1px solid #2e7d32;
+            color: #2e7d32;
+            padding: 4px 12px;
+            margin-right: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .button-group button:hover {
+            background: #2e7d32;
+            color: white;
+        }
+        .summary {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
 
+        /* Hide Home link in landscape mode */
+        @media screen and (min-width: 1024px) {
+            .nav-links li:first-child {
+                display: none;
+            }
+        }
+
+        /* New styles for two-column layout */
+        @media screen and (min-width: 1024px) {
+            body {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+            }
+
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+
+            #home {
+                position: fixed;
+                left: 0;
+                top: 60px; /* Height of navbar */
+                bottom: 0;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+                padding: 20px;
+                box-sizing: border-box;
+                color: #2c3e50;
+            }
+
+            #home .hero-content {
+                max-width: 100%;
+            }
+
+            #home .profile-image img {
+                max-width: 200px;
+            }
+
+            #home .social-links a {
+                color: #2c3e50;
+            }
+
+            #home .social-links a:hover {
+                color: #2e7d32;
+            }
+
+            .main-content {
+                margin-left: 40%;
+                margin-top: 60px; /* Height of navbar */
+                padding: 20px;
+                width: 60%;
+                background: white;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            background: white;
+            padding: 20px;
+        }
+
+        .nav-links a:hover {
+            color: #2e7d32;
+        }
+    </style>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Charig Yang</name>
-              </p>
-              <p>I am a PhD student at the Visual Geometry Group (VGG) at University of Oxford, advised by <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Weidi Xie</a>, where I work on computer vision, more specifically video understanding. 
-              </p>
-              <p>
-                I am generously funded by <a href="https://epsrc.ukri.org/">EPSRC</a> and <a href="https://aims.robots.ox.ac.uk/">AIMS CDT</a>. I also spent half a year interning at <a href="https://about.meta.com/uk/realitylabs/">Meta Reality Labs</a>.
-              </p>
-              <p>
-                I did my undergraduate in Engineering Science, also at Oxford. During which, I spent lovely summers at <a href="https://www.jreast.co.jp/e/">Japan Railways</a>, <a href="https://www.metaswitch.com/">Metaswitch</a> (now acquired by Microsoft), <a href="https://www3.truecorp.co.th/new/">True</a>, <a href="https://www.cpgroupglobal.com/">CP Group</a>, and <a href="https://www.eng.ox.ac.uk/">Oxford’s Engineering Department</a>.
-              </p>
-              <p>
-                Prior to which, I was born and raised in the suburbs of Bangkok, Thailand.
-              </p>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Charig Yang</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#misc">Misc</a></li>
+            </ul>
+        </div>
+    </nav>
 
-              <p style="text-align:center">
-                <a href="mailto:charig@robots.ox.ac.uk">Email</a> &nbsp/&nbsp
-                <a href="res/cv.pdf">CV</a> &nbsp/&nbsp
-                <!--<a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp/&nbsp-->
-                <a href="https://twitter.com/chaaarig">Twitter</a> &nbsp/&nbsp
-                <a href="https://github.com/charigyang/">Github</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=nsCr3i8AAAAJ&hl=en">Google Scholar</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="res/pp.jpg" class="hoverZoomLink">
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My research focuses on computer vision. 
-                I am particularly interested in: video understanding, self-supervised learning, segmentation, and new applications.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="pp.jpg" alt="Charig Yang">
+            </div>
+            <h1>Charig Yang</h1>
+            <p>Research Scientist, Isomorphic Labs</p>
+            <p>PhD, Oxford VGG</p>
+            <p>charig@robots.ox.ac.uk</p>
+            <!-- <p><span id="email"></span></p> -->
+            <div class="social-links">
+                <a href="cv.pdf" class="social-link"><i class="fas fa-file-alt"></i></a>
+                <a href="https://twitter.com/chaaarig" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/charigyang/" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=nsCr3i8AAAAJ&hl=en" class="social-link"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/charig/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
 
-                      <tr>
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="">
-                <papertitle>Learning from Time</papertitle>
-              </a>
-              <br>
-              <strong>Charig Yang</strong>
-              <br>
-              <em>PhD Thesis</em>
-              <br>
-              <a href="res/thesis_abs.txt">abstract</a> / thesis (coming soon)
-              <br>
-              <p></p>
-              <p>Submitted my thesis! This thesis explores novel methods in learning and using temporal signals in videos. I will be defending in April. My examiners will be <a href="https://chrirupp.github.io/">Christian Rupprecht</a> (Oxford) and <a href="https://billf.mit.edu/">Bill Freeman</a> (MIT).</p>
-            </td>
-            </tr>
-            <tr>
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="https://charigyang.github.io/order/">
-                <papertitle>Made to Order: Discovering monotonic temporal changes via self-supervised video ordering</papertitle>
-              </a>
-              <br>
-              <strong>Charig Yang</strong>, 
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
-              <br>
-              <em>ECCV, 2024</em> <font color="red"><strong>(Oral Presentation)</strong></font> 
-              <br>
-              <a href="https://charigyang.github.io/order/">project page</a> /
-              <a href="https://arxiv.org/abs/2404.16828">arXiv</a>
-              <p></p>
-              <p>Changes happen all the time, but only some are consistent over time. Ordering shuffled sequences reveals the latter.</p>
-            </td>
-            </tr>
-            <tr>
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="https://www.robots.ox.ac.uk/~vgg/research/flowsam/">
-                <papertitle>Moving Object Segmentation: All You Need Is SAM (and Flow)</papertitle>
-              </a>
-              <br>
-              <a href="https://github.com/Jyxarthur">Junyu Xie</a>,
-              <strong>Charig Yang</strong>, 
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
-              <br>
-              <em>ACCV, 2024</em> <font color="red"><strong>(Oral Presentation)</strong></font> 
-              <br>
-              <a href="https://www.robots.ox.ac.uk/~vgg/research/flowsam/">project page</a> /
-              <a href="https://arxiv.org/abs/2404.12389">arXiv</a>
-              <p></p>
-              <p>SAM + Optical Flow = FlowSAM.</p>
-            </td>
-                      </tr>
-            <tr>
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="https://charigyang.github.io/abouttime/">
-                <papertitle>It's About Time: Analog Clock Reading in the Wild</papertitle>
-              </a>
-              <br>
-              <strong>Charig Yang</strong>, 
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
-              <br>
-              <em>CVPR</em>, 2022
-              <br>
-              <a href="https://charigyang.github.io/abouttime/">project page</a> /
-              <a href="https://arxiv.org/abs/2111.09162">arXiv</a> /
-              <a href="https://x.com/giffmana/status/1461249563466022913">tweet (by Lucas Beyer)</a> /
-              <a href="https://www.newscientist.com/article/2298773-ai-has-learned-to-read-the-time-on-an-analogue-clock/">new scientist article</a> 
-              <p></p>
-              <p>We solve a niche but fun problem of reading clocks (that 2025's VLMs still fails!). We circumvent manual supervision by exploiting the fact that time flows at a constant rate.</p>
-            </td>
+    <div class="main-content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>From June 2025, I am starting as a Research Scientist at <a href="https://www.isomorphiclabs.com/" style="color: #2e7d32; text-decoration: none;">Isomorphic Labs</a>, an Alphabet spinoff from <a href="https://deepmind.google/" style="color: #2e7d32; text-decoration: none;">Google DeepMind</a> focusing on AI for drug discovery. I enjoy doing exploratory research in machine learning and computer vision, with a focus on multimodal and self-supervised learning for developing novel applications.</p>
+                <p>I completed my PhD at the <a href="https://www.robots.ox.ac.uk/~vgg/" style="color: #2e7d32; text-decoration: none;">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/" style="color: #2e7d32; text-decoration: none;">University of Oxford</a> with <a href="https://www.robots.ox.ac.uk/~az/" style="color: #2e7d32; text-decoration: none;">Andrew Zisserman</a> and <a href="https://www.robots.ox.ac.uk/~weidi/" style="color: #2e7d32; text-decoration: none;">Weidi Xie</a>. My thesis focuses on visual understanding through time, and was examined by <a href="https://chrirupp.github.io/" style="color: #2e7d32; text-decoration: none;">Christian Rupprecht</a> (Oxford) and <a href="https://billf.mit.edu/" style="color: #2e7d32; text-decoration: none;">William T. Freeman</a> (MIT). I also interned at <a href="https://about.meta.com/realitylabs/" style="color: #2e7d32; text-decoration: none;">Meta Reality Labs</a> on multimodal AI for smart glasses.</p>
+                <p>Previously, I did my undergraduate in Engineering Science, also at Oxford. During which, I spent lovely summers at <a href="https://www.jreast.co.jp/e/" style="color: #2e7d32; text-decoration: none;">Japan Railways</a>, <a href="https://www.metaswitch.com/" style="color: #2e7d32; text-decoration: none;">Metaswitch</a> (acquired by <a href="https://www.microsoft.com/" style="color: #2e7d32; text-decoration: none;">Microsoft</a>), <a href="https://oxford-man.ox.ac.uk/" style="color: #2e7d32; text-decoration: none;">Oxford-Man Institute</a>, <a href="https://www.true.th/en/" style="color: #2e7d32; text-decoration: none;">True</a>, and <a href="https://www.cpgroupglobal.com/" style="color: #2e7d32; text-decoration: none;">CP Group</a>.</p>
+                <p>I was born and raised in the suburbs of Bangkok, Thailand.</p>
+            </div>
+        </section>
 
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🧬 Isomorphic Labs</h3>
+                    <p class="date">Research Scientist | Jun 2025 - Present | London, UK</p>
+                    <p>Machine learning research for drug discovery.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🕶️ Reality Labs, Meta</h3>
+                    <p class="date">Research Scientist Intern | Jun 2024 - Feb 2025 | Seattle, WA</p>
+                    <p>Multimodal (RGB, eye gaze, inertial sensors) AI for reading detection in smart glasses.</p>
+                    <div class="button-group">
+                        <button onclick="const element = Array.from(document.querySelectorAll('h3')).find(el => el.textContent === 'Reading Recognition in the Wild'); const offset = 80; const elementPosition = element.getBoundingClientRect().top; const offsetPosition = elementPosition + window.pageYOffset - offset; window.scrollTo({top: offsetPosition, behavior: 'smooth'})">paper</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h3>👀 VGG, University of Oxford</h3>
+                    <p class="date">PhD Student, Computer Vision | Oct 2020 - Apr 2025 | Oxford, UK</p>
+                    <p>Multimodal visual understanding by leveraging time.</p>
+                    <div class="button-group">
+                        <button onclick="toggleAbstract(event)">thesis</button>
+                        <button onclick="toggleDefense(event)">defense</button>
+                    </div>
+                    <div id="thesis-abstract" class="summary">
+                        <p>Thesis: Learning from Time</p>
+                        <p>Supervisors: Andrew Zisserman, Weidi Xie</p>
+                        <p>Examiners: Christian Rupprecht (Oxford), William T. Freeman (MIT)</p>
+                        <p>Topics: video understanding, self-supervised learning, multimodal, motion segmentation, applications</p>
+                        <p>With the rise of deep learning, computer vision systems have been highly successful at understanding images. However, understanding the dynamic visual world we live in requires both understanding the appearances of individual image frames, and the temporal relationships between them. This thesis aims to understand videos through the lens of time, by learning from the temporal relationships within image sequences, both instantaneously and over a period of time.</p>
+                        <p>In the first half, we focus on using instantaneous motion – temporal changes between neighbouring video frames – to discover moving objects, based on the intuition that the subject in the video usually moves independently from the background. We propose two methods that can solve this task: first, for a single object in a self-supervised manner by grouping motion into layers, and second, for multiple objects over time in a supervised manner using a vision foundation model. We show applications towards general videos, as well as discovering objects with minimal visibility such as camouflages, where we also present the largest video camouflage dataset to date.</p>
+                        <p>In the second half, we go beyond instantaneous changes and learn from patterns of changes over time, from seconds (natural videos) to days (time-lapse videos) to years (longitudinal images). We leverage the properties of time as a direct supervisory signal, and introduce applications that were previously unachievable in computer vision. We first exploit "uniformity" – that time flows at a constant rate, to read analog clocks in unconstrained scenes. We then relax this constraint to "monotonicity" – that certain changes are consistently unidirectional over a period of time, to discover monotonic changes in a sequence of images. For both cases, we also contribute datasets to foster further research.</p>
+                    </div>
+                    <div id="defense-info" class="summary">
+                        <p>Photo: AZ, me, Bill Freeman (who flew over from MIT!), Christian Rupprecht.</p>
+                    </div>
+                    <img id="defense-image" src="defense.png" class="defense-image" alt="Thesis Defense">
+                </div>
+            </div>
+        </section>
 
-                      </tr>
-            <tr>
+        <section id="research" class="research">
+            <h2>Research</h2>
+            <div class="research-content">
+                <div class="publication">
+                    <h3>Reading Recognition in the Wild</h3>
+                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx, Lambert Mathias, Kiran Somasundaram, Luis Pesqueira, James Fort, Sheroze Sheriffdeen, Omkar Parkhi, Carl Ren, Mi Zhang, Yuning Chai, Richard Newcombe, Hyo Jin Kim</p>
+                    <p class="venue" style="color: #2e7d32;">In submission, 2025 (Internship paper at Meta)</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://www.projectaria.com/datasets/reading-in-the-wild/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2505.24848', '_blank')">arXiv</button>
+                    </div>
+                    <div class="summary">
+                        <p>An investigation into what it means to read from different sensors (eye gaze, inertial sensors, RGB).</p>
+                    </div>
+                </div>
 
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="https://charigyang.github.io/motiongroup/">
-                <papertitle>Self-supervised Video Object Segmentation by Motion Grouping</papertitle>
-              </a>
-              <br>
-              <strong>Charig Yang</strong>,
-              <a href="https://twitter.com/hala_lamdouar/">Hala Lamdouar</a>,
-              <a href="https://erikalu.com/">Erika Lu</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              Short: CVPR Workshop on Robust Video Scene Understanding, 2021 
-              <font color="red"><strong>(Best Paper Award)</strong></font> <br>
-              Full: <em>ICCV</em>, 2021
-              <br>
-              <a href="https://charigyang.github.io/motiongroup/">project page</a> /
-              <a href="https://arxiv.org/abs/2104.07658">arXiv</a>
-              <p></p>
-              <p>Motion can be used to discover moving objects in general. We introduce a self-supervised segmentation method by grouping motion into layers using a transformer.</p>
-            </td>
-            </tr>
-            <tr>
-            <td style="padding:40px;width:80%;vertical-align:middle">
-              <a href="https://www.robots.ox.ac.uk/~vgg/data/MoCA/">
-                <papertitle>Betrayed by Motion: Camouflaged Object Discovery via Motion Segmentation</papertitle>
-              </a>
-              <br>
-              <a href="https://twitter.com/hala_lamdouar/">Hala Lamdouar</a>,
-              <strong>Charig Yang</strong>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a>
-              <br>
-              <em>ACCV</em>, 2020
-              <br>
-              <a href="https://www.robots.ox.ac.uk/~vgg/data/MoCA/">project page</a> /
-              <a href="https://arxiv.org/abs/2011.11630">arXiv</a>
-              <p></p>
-              <p>Camouflaged animals are hard to see, only until they move. We present a method of discovering camouflages using motion, and a large-scale video camouflage dataset.</p>
-            </td></tr>
+                <div class="publication">
+                    <h3>Discovering Monotonic Temporal Changes via Self-supervised Video Ordering</h3>
+                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, Weidi Xie, Andrew Zisserman</p>
+                    <p class="venue" style="color: #2e7d32;">ECCV, 2024 (Oral Presentation)</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://charigyang.github.io/order/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2404.16828', '_blank')">arXiv</button>
+                    </div>
+                    <div class="summary">
+                        <p>Changes happen all the time, but only some are consistent over time. We present the first solution to this new task by ordering shuffled sequences.</p>
+                    </div>
+                </div>
 
+                <div class="publication">
+                    <h3>Moving Object Segmentation: All You Need Is SAM (and Flow)</h3>
+                    <p class="authors">Junyu Xie, <span style="color: #2e7d32">Charig Yang</span>, Weidi Xie, Andrew Zisserman</p>
+                    <p class="venue" style="color: #2e7d32;">ACCV, 2024 (Oral Presentation)</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://www.robots.ox.ac.uk/~vgg/research/flowsam/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2404.12389', '_blank')">arXiv</button>
+                    </div>
+                    <div class="summary">
+                        <p>SAM + Optical Flow = FlowSAM.</p>
+                    </div>
+                </div>
 
+                <div class="publication">
+                    <h3>It's About Time: Analog Clock Reading in the Wild</h3>
+                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, Weidi Xie, Andrew Zisserman</p>
+                    <p class="venue" style="color: #2e7d32;">CVPR, 2022</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://charigyang.github.io/abouttime/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2111.09162', '_blank')">arXiv</button>
+                        <button onclick="window.open('https://www.newscientist.com/article/2298773', '_blank')">new scientist article</button>
+                        <button onclick="window.open('https://x.com/giffmana/status/1461249563466022913', '_blank')">lucas beyer tweet</button>
+                    </div>
+                    <div class="summary">
+                        <p>We present the first working solution to a niche but fun problem of reading clocks (that 2025's VLMs still fails!). We circumvent manual supervision by exploiting the fact that time flows at a constant rate.</p>
+                    </div>
+                </div>
 
+                <div class="publication">
+                    <h3>Self-supervised Video Object Segmentation by Motion Grouping</h3>
+                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, Hala Lamdouar, Erika Lu, Andrew Zisserman, Weidi Xie</p>
+                    <p class="venue" style="color: #2e7d32;">ICCV, 2021 (Short: CVPR Workshop, 2021, Best Paper Award)</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://charigyang.github.io/motiongroup/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2104.07658', '_blank')">arXiv</button>
+                    </div>
+                    <div class="summary">
+                        <p>Motion can be used to discover moving objects in general. We introduce a self-supervised segmentation method by grouping motion into layers using a transformer.</p>
+                    </div>
+                </div>
 
+                <div class="publication">
+                    <h3>Betrayed by Motion: Camouflaged Object Discovery via Motion Segmentation</h3>
+                    <p class="authors">Hala Lamdouar, <span style="color: #2e7d32">Charig Yang</span>, Weidi Xie, Andrew Zisserman</p>
+                    <p class="venue" style="color: #2e7d32;">ACCV, 2020</p>
+                    <div class="button-group">
+                        <button onclick="toggleSummary(event)">summary</button>
+                        <button onclick="window.open('https://www.robots.ox.ac.uk/~vgg/data/MoCA/', '_blank')">project page</button>
+                        <button onclick="window.open('https://arxiv.org/abs/2011.11630', '_blank')">arXiv</button>
+                    </div>
+                    <div class="summary">
+                        <p>Camouflaged animals are hard to see, only until they move. We present a method of discovering camouflages using motion, and a large-scale video camouflage dataset.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Teaching</heading>
-              
-              <p>
-                2022-23: A2 (second-year) Electronic and Information Engineering, B14 (third-year) Information Engineering Systems, C18 (fourth-year) Computer Vision and Robotics
-              <br>
-                2021-22: B14 (third-year) Information Engineering Systems
-              <br>                
-                2020-21: P2 (first-year) Electronic and Information Engineering, A1 (second-year) Mathematics, C19 (fourth-year) Machine Learning
-              </p>
-              <p>
-                You can find my summary notes for all P and A modules, and some B modules <a href="res/notes.zip">here</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+        <section id="misc" class="misc">
+            <h2>Misc</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>📚 Teaching</h3>
+                    <p style="margin: 4px 0;">C18 Computer Vision and Robotics, C19 Machine Learning, B14 Information Engineering Systems (incl. practicals), B1 Engineering Computation, A1 Mathematics, A2 Control Theory, P2 Electronics</p>
+                    <div class="button-group">
+                        <button onclick="window.open('https://www.dropbox.com/scl/fo/4sz8ee9nvon5s9e7g31qo/AAYNq0VXEKV2iAOKzQAWSFU?e=1&fbclid=IwY2xjawKY2t1leHRuA2FlbQIxMQBicmlkETFkWHpxSUtGdXlCSjZmTUp4AR4axD21a9tFOFJmTWgw8oWGG7_p3YX0fTT_Ws1bZWX1Z7qhZ9bNqVhdngp0uA_aem_NPgM-l38-a0BJk8gFaOP6Q&rlkey=joa1moszqe7ct2l0v8z9ptgrc&dl=0', '_blank')">summary notes</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h3>🏆 Awards</h3>
+                    <p style="margin: 4px 0;">• Best Presentation Award, UK Robotics CDT Conference</p>
+                    <p style="margin: 4px 0;">• Best Paper Award, CVPR Workshop on Robust Video Scene Understanding</p>
+                    <p style="margin: 4px 0;">• Best Poster Award, Information Engineering undergraduate thesis</p>
+                    <p style="margin: 4px 0;">• Edgell Sheppee Prize for second-best overall academic performance in Engineering</p>
+                    <p style="margin: 4px 0;">• National Olympiads: 4x silver (maths), 1x bronze (chemistry)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🎲 Random</h3>
+                    <p style="margin: 4px 0;">• I was part of the <a href="https://www.guinnessworldrecords.com/world-records/most-people-dipping-egg-soldiers-simultaneously" target="_blank" style="color: #2e7d32; text-decoration: none;">Guinness world record</a> on most people dipping bread in egg simultaneously</p>
+                    <p style="margin: 4px 0;">• I was part of the Oxford Poker team, where we defeated Cambridge in the Varsity match</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Template gratefully stolen from <a href="https://jonbarron.info/">here</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <script src="script.js"></script>
+    <script>
+        function toggleAbstract(event) {
+            event.preventDefault();
+            const abstract = document.getElementById('thesis-abstract');
+            const button = event.target;
+            
+            if (abstract.style.display === 'none' || abstract.style.display === '') {
+                abstract.style.display = 'block';
+                button.textContent = 'hide abstract';
+            } else {
+                abstract.style.display = 'none';
+                button.textContent = 'abstract';
+            }
+        }
+
+        function toggleDefense(event) {
+            event.preventDefault();
+            const defenseImage = document.getElementById('defense-image');
+            const defenseInfo = document.getElementById('defense-info');
+            const button = event.target;
+            
+            if (defenseImage.style.display === 'none' || defenseImage.style.display === '') {
+                defenseImage.style.display = 'block';
+                defenseInfo.style.display = 'block';
+                button.textContent = 'hide defense';
+            } else {
+                defenseImage.style.display = 'none';
+                defenseInfo.style.display = 'none';
+                button.textContent = 'defense';
+            }
+        }
+
+        function toggleSummary(event) {
+            event.preventDefault();
+            const button = event.target;
+            const summary = button.parentElement.nextElementSibling;
+            
+            if (summary.style.display === 'none' || summary.style.display === '') {
+                summary.style.display = 'block';
+                button.textContent = 'hide summary';
+            } else {
+                summary.style.display = 'none';
+                button.textContent = 'summary';
+            }
+        }
+
+        // Email protection
+        window.onload = function() {
+            const parts = ['charig', '@', 'google', '.', 'com'];
+            const emailElement = document.getElementById('email');
+            emailElement.textContent = parts.join('');
+            emailElement.innerHTML = `<a href="mailto:${parts.join('')}" style="color: inherit; text-decoration: none;">${parts.join('')}</a>`;
+        }
+    </script>
 </body>
-
-</html>
+</html> 
