@@ -63,6 +63,25 @@
             line-height: 1.6;
         }
 
+        .authors-ellipsis {
+            cursor: pointer;
+            color: #2e7d32;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .authors-ellipsis:hover {
+            color: #1b5e20;
+        }
+
+        .authors-full {
+            display: none !important;
+        }
+
+        .authors-full.show {
+            display: inline !important;
+        }
+
         /* Hide Home link in landscape mode */
         @media screen and (min-width: 1024px) {
             .nav-links li:first-child {
@@ -240,7 +259,7 @@
             <div class="research-content">
                 <div class="publication">
                     <h3>Reading Recognition in the Wild</h3>
-                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx, Lambert Mathias, Kiran Somasundaram, Luis Pesqueira, James Fort, Sheroze Sheriffdeen, Omkar Parkhi, Carl Ren, Mi Zhang, Yuning Chai, Richard Newcombe, Hyo Jin Kim</p>
+                    <p class="authors"><span style="color: #2e7d32">Charig Yang</span>, <span class="authors-ellipsis" onclick="toggleAuthors(event)">[...]</span><span class="authors-full" style="display: none;">, Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx, Lambert Mathias, Kiran Somasundaram, Luis Pesqueira, James Fort, Sheroze Sheriffdeen, Omkar Parkhi, Carl Ren, Mi Zhang</span>, Yuning Chai, Richard Newcombe, Hyo Jin Kim</p>
                     <p class="venue" style="color: #2e7d32;">In submission, 2025 (Internship paper at Meta)</p>
                     <div class="button-group">
                         <button onclick="toggleSummary(event)">summary</button>
@@ -398,6 +417,20 @@
             } else {
                 summary.style.display = 'none';
                 button.textContent = 'summary';
+            }
+        }
+
+        function toggleAuthors(event) {
+            event.preventDefault();
+            const ellipsis = event.target;
+            const authorsFull = ellipsis.nextElementSibling;
+            
+            if (authorsFull.classList.contains('show')) {
+                authorsFull.classList.remove('show');
+                ellipsis.textContent = '[...]';
+            } else {
+                authorsFull.classList.add('show');
+                ellipsis.textContent = '[hide]';
             }
         }
 
